@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label>Enter a number:</label>
+    <input type="text" id="n1" />
+    <p>Reverse of the provided number is</p>
+    <button onclick="f1()">Find</button>
+    <p id="n2"></p>
+    <script>
+      function f1() {
+        var num = document.getElementById("n1").value;
+        var s = num.split("");
+        var rs = s.reverse();
+        var reverse = rs.join("");
+        document.getElementById("n2").innerHTML = reverse;
+      }
+    </script>
+  </body>
+</html>

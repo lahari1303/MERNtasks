@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label>Enter a string:</label>
+    <input type="text" id="n1" placeholder="Enter a string" />
+    <button type="button" onclick="f1()">Sorted String</button>
+    <p id="n2"></p>
+    <script>
+      function f1() {
+        var string = document.getElementById("n1").value;
+        var sString = string.split("");
+        var sortString = sString.sort();
+        var fString = sortString.join("");
+        document.getElementById("n2").innerHTML = fString;
+      }
+    </script>
+  </body>
+</html>
